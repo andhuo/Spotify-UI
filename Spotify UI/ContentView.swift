@@ -18,6 +18,9 @@ struct ContentView: View {
                     .padding(.horizontal)
                 
                 Spacer()
+                
+                ControlView()
+                    .padding(.bottom, 70)
             }
         }
     }
