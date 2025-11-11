@@ -34,6 +34,8 @@ struct ContentView: View {
                 
                 ControlView()
                     .padding(.bottom, 40)
+                
+                BottomOptionsView()
             }
             .frame(maxHeight: .infinity, alignment: .center)
         }
