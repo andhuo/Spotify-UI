@@ -15,7 +15,7 @@ struct SongView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 340, height: 340)
-                    .cornerRadius(10)
+                    .cornerRadius(8)
                     .padding(.top, 10)
             
             

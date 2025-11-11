@@ -25,6 +25,7 @@ struct ExitView: View {
         }
         .padding(.horizontal)
         .padding(.top, 20)
+        .foregroundStyle(.white.opacity(0.9))
     }
 }
 

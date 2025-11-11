@@ -27,7 +27,7 @@ struct ControlView: View {
             
         }
         .font(.title2)
-        .foregroundColor(.white)
+        .foregroundStyle(.white.opacity(0.9))
     }
 }
 
