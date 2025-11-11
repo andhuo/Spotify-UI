@@ -29,6 +29,9 @@ struct ContentView: View {
                 
                 Spacer(minLength: 60)
                 
+                SliderView()
+
+                
                 ControlView()
                     .padding(.bottom, 40)
             }
