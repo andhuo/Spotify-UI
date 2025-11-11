@@ -9,21 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            VStack {
+        ZStack {
+            LinearGradient(
+                colors: [.gray.opacity(0.3), .black.opacity(0.9)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea()
+            
+            VStack(spacing: 0) {
                 ExitView()
-                
-                Spacer(minLength: 20)
-                
-                SongView()
+                    .padding(.top, 20)
                     .padding(.horizontal)
                 
-                Spacer()
+                Spacer(minLength: 30)
+                
+                SongView()
+                    .padding(.horizontal, 24)
+                
+                Spacer(minLength: 60)
                 
                 ControlView()
-                    .padding(.bottom, 70)
+                    .padding(.bottom, 40)
             }
+            .frame(maxHeight: .infinity, alignment: .center)
         }
     }
+}
 
 #Preview {
     ContentView()
